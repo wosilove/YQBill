@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YQLockViewController">
+            <connections>
+                <outlet property="lockView" destination="AnC-AV-ZaE" id="ACQ-kO-kjO"/>
+                <outlet property="tipsLabel" destination="zlJ-ii-5DW" id="0pY-ob-aDb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AnC-AV-ZaE" customClass="YQLockView">
+                    <rect key="frame" x="0.0" y="122" width="320" height="276"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="276" id="k5v-z2-04j"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bac-Fb-zOE">
+                    <rect key="frame" x="0.0" y="438" width="320" height="30"/>
+                    <state key="normal" title="不想绘制手势密码">
+                        <color key="titleColor" red="1" green="0.58774321331020318" blue="0.1944829405870474" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="closeClick:" destination="-1" eventType="touchUpInside" id="jNM-M6-Xti"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="网贷账本手势设置" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKK-rq-lb7">
+                    <rect key="frame" x="0.0" y="50" width="320" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请绘制手势密码" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zlJ-ii-5DW">
+                    <rect key="frame" x="0.0" y="80" width="320" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="1" green="0.58774321330000001" blue="0.19448294059999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="highlightedColor" red="1" green="0.58774321330000001" blue="0.19448294059999999" alpha="1" colorSpace="calibratedRGB"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.11764705882352941" green="0.21176470588235294" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zlJ-ii-5DW" firstAttribute="top" secondItem="rKK-rq-lb7" secondAttribute="bottom" constant="10" id="919-oD-eiI"/>
+                <constraint firstItem="Bac-Fb-zOE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ByP-g4-Mq7"/>
+                <constraint firstAttribute="trailing" secondItem="AnC-AV-ZaE" secondAttribute="trailing" id="Eho-ay-8hr"/>
+                <constraint firstAttribute="trailing" secondItem="zlJ-ii-5DW" secondAttribute="trailing" id="HhZ-gs-GyI"/>
+                <constraint firstItem="AnC-AV-ZaE" firstAttribute="top" secondItem="zlJ-ii-5DW" secondAttribute="bottom" constant="27" id="KKK-HE-fkz"/>
+                <constraint firstAttribute="trailing" secondItem="Bac-Fb-zOE" secondAttribute="trailing" id="UAf-wO-HyH"/>
+                <constraint firstItem="rKK-rq-lb7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="b2H-I4-LT7"/>
+                <constraint firstItem="AnC-AV-ZaE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nBZ-XP-Xr3"/>
+                <constraint firstItem="zlJ-ii-5DW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="nFJ-9V-O2o"/>
+                <constraint firstItem="rKK-rq-lb7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="tyV-ZR-var"/>
+                <constraint firstItem="Bac-Fb-zOE" firstAttribute="top" secondItem="AnC-AV-ZaE" secondAttribute="bottom" constant="40" id="uYg-g9-nKG"/>
+                <constraint firstItem="zlJ-ii-5DW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="w8S-3X-O3G"/>
+                <constraint firstAttribute="trailing" secondItem="rKK-rq-lb7" secondAttribute="trailing" id="z0f-lT-BNT"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="nFJ-9V-O2o"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="144" y="267"/>
+        </view>
+    </objects>
+</document>

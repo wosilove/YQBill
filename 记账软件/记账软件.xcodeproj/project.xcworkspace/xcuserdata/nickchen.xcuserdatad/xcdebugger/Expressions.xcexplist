@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[YQKeepAccountController companyViewController:selectCompany:]:YQKeepAccountController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[YQKeepAccountController saveClick:]:YQKeepAccountController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[YQKeepAccountController rateAndDateCellDidEndEditing:]:YQKeepAccountController.m">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

@@ -1,0 +1,102 @@
+
+/* Class = "UITabBarItem"; title = "待办事项"; ObjectID = "0cu-O6-9Eo"; */
+"0cu-O6-9Eo.title" = "待办事项";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "0na-LU-vns"; */
+"0na-LU-vns.title" = "Item";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "2bg-xf-8rl"; */
+"2bg-xf-8rl.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "请输入备注"; ObjectID = "3G3-xZ-S4K"; */
+"3G3-xZ-S4K.placeholder" = "请输入备注";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "3kI-ce-mS1"; */
+"3kI-ce-mS1.text" = "Label";
+
+/* Class = "UIBarButtonItem"; title = "保存"; ObjectID = "6Xk-lZ-ayg"; */
+"6Xk-lZ-ayg.title" = "保存";
+
+/* Class = "UILabel"; text = "天"; ObjectID = "6eb-KM-Yr5"; */
+"6eb-KM-Yr5.text" = "天";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "AhP-zu-Lkt"; */
+"AhP-zu-Lkt.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "FLA-r1-E09"; */
+"FLA-r1-E09.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "投资详情"; ObjectID = "HqT-3U-dws"; */
+"HqT-3U-dws.title" = "投资详情";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "JJO-2P-aOB"; */
+"JJO-2P-aOB.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "0"; ObjectID = "Lmm-Wg-CZz"; */
+"Lmm-Wg-CZz.placeholder" = "0";
+
+/* Class = "UITabBarItem"; title = "投资纪录"; ObjectID = "P4P-5m-8xN"; */
+"P4P-5m-8xN.title" = "投资纪录";
+
+/* Class = "UINavigationItem"; title = "记一笔"; ObjectID = "Qcd-4Z-jd3"; */
+"Qcd-4Z-jd3.title" = "记一笔";
+
+/* Class = "UILabel"; text = "备注："; ObjectID = "RIW-UA-3Dv"; */
+"RIW-UA-3Dv.text" = "备注：";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "SQN-ca-2Bc"; */
+"SQN-ca-2Bc.text" = "Label";
+
+/* Class = "UILabel"; text = "平台名称："; ObjectID = "WEn-qe-elh"; */
+"WEn-qe-elh.text" = "平台名称：";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "XIO-kF-M9r"; */
+"XIO-kF-M9r.text" = "Detail";
+
+/* Class = "UILabel"; text = "投资金额:"; ObjectID = "Xn3-Tn-E9M"; */
+"Xn3-Tn-E9M.text" = "投资金额:";
+
+/* Class = "UILabel"; text = "月"; ObjectID = "Xov-NA-TJz"; */
+"Xov-NA-TJz.text" = "月";
+
+/* Class = "UITableViewController"; title = "平台名称"; ObjectID = "Ylb-Al-N4P"; */
+"Ylb-Al-N4P.title" = "平台名称";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "ZYe-q7-eIR"; */
+"ZYe-q7-eIR.text" = "Label";
+
+/* Class = "UILabel"; text = "起息日："; ObjectID = "atv-3y-LSN"; */
+"atv-3y-LSN.text" = "起息日：";
+
+/* Class = "UILabel"; text = "计息方式："; ObjectID = "bfB-Xk-mZ0"; */
+"bfB-Xk-mZ0.text" = "计息方式：";
+
+/* Class = "UINavigationItem"; title = "待办事项"; ObjectID = "ele-kj-zqJ"; */
+"ele-kj-zqJ.title" = "待办事项";
+
+/* Class = "UITabBarItem"; title = "更多"; ObjectID = "eyu-ld-PCo"; */
+"eyu-ld-PCo.title" = "更多";
+
+/* Class = "UINavigationItem"; title = "首页"; ObjectID = "gR9-42-6IU"; */
+"gR9-42-6IU.title" = "首页";
+
+/* Class = "UINavigationItem"; title = "投资纪录"; ObjectID = "grb-R5-jFr"; */
+"grb-R5-jFr.title" = "投资纪录";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "o3Q-cM-baR"; */
+"o3Q-cM-baR.text" = "Label";
+
+/* Class = "UITabBarItem"; title = "首页"; ObjectID = "qi0-YY-fH4"; */
+"qi0-YY-fH4.title" = "首页";
+
+/* Class = "UILabel"; text = "期限:"; ObjectID = "tmO-G6-IFP"; */
+"tmO-G6-IFP.text" = "期限:";
+
+/* Class = "UILabel"; text = "利率:"; ObjectID = "u14-yj-QiR"; */
+"u14-yj-QiR.text" = "利率:";
+
+/* Class = "UINavigationItem"; title = "更多"; ObjectID = "xIg-8N-JJG"; */
+"xIg-8N-JJG.title" = "更多";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "xTO-eI-GtY"; */
+"xTO-eI-GtY.text" = "Label";

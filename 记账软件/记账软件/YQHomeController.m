@@ -11,7 +11,7 @@
 #import "YQHomeCell.h"
 #import "CompanyAccount.h"
 #import "YQSecondHomeViewController.h"
-
+#import "NSTimer+NKHelper.h"
 @interface YQHomeController ()<UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *interestToBeCollectedLabel;
 @property (weak, nonatomic) IBOutlet UILabel *interestCollectedLabel;
@@ -28,11 +28,18 @@
 
 @implementation YQHomeController
 
-- (void)viewWillAppear:(BOOL)animated
+- (void)viewDidAppear:(BOOL)animated
 {
     self.interestToBeCollectedLabel.text = [NSString stringWithFormat:@"%.2f",[YQAccountTool interestTobePaid]];
+    
+
+    
     self.interestCollectedLabel.text = [NSString stringWithFormat:@"%.2f",[YQAccountTool interestHaveBeenPaid]];
     self.amountLabel.text = [NSString stringWithFormat:@"%.2f",[YQAccountTool sumInvestAmount]];
+    
+    
+    
+    
     self.averageRateLabel.text = [NSString stringWithFormat:@"%.2f%%",[YQAccountTool weightedRate] * 100];
     [self accountByCompany];
     [self.homeTableView reloadData];
@@ -43,6 +50,7 @@
     [super viewDidLoad];
     self.homeTableView.delegate = self;
     self.homeTableView.dataSource = self;
+    self.navigationController.automaticallyAdjustsScrollViewInsets = NO;
 }
 
 -(NSMutableArray *)accountByCompany
@@ -88,6 +96,18 @@
     return @"投资平台排行榜";
 }
 
+- (void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section {
+    UITableViewHeaderFooterView *header = (UITableViewHeaderFooterView *)view;
+    
+    header.textLabel.textColor = [UIColor redColor];
+    header.textLabel.font = [UIFont boldSystemFontOfSize:18];
+    CGRect headerFrame = header.frame;
+    header.textLabel.frame = headerFrame;
+    //header.textLabel.textAlignment = NSTextAlignmentCenter;
+}
+
+
+
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     YQSecondHomeViewController *secondHomeVc = [[YQSecondHomeViewController alloc]init];
@@ -100,5 +120,7 @@
 {
     return 60.0;
 }
+
+
 
 @end

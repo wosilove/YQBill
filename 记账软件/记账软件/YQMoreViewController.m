@@ -36,7 +36,11 @@
     return self.noticeSwitch.on == YES ? 5 : 4;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 
+}
 
 - (IBAction)noticeSwichChanged:(UISwitch *)sender {
     if (sender.on == YES) {
@@ -47,4 +51,6 @@
         [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     }
 }
+
+
 @end

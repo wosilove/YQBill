@@ -75,6 +75,8 @@
 }
 
 - (IBAction)closeClick:(id)sender {
+    
     [self dismissViewControllerAnimated:YES completion:nil];
+    
 }
 @end

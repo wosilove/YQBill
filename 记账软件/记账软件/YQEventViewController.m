@@ -10,10 +10,9 @@
 #import "YQAccountTool.h"
 #import "YQPaymentViewCell.h"
 @interface YQEventViewController ()<UITableViewDataSource,UITableViewDelegate,UIActionSheetDelegate>
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segment;
 
-- (IBAction)toBePaidButtonClicked:(id)sender;
-- (IBAction)haveBeenPaidClicked:(id)sender;
-- (IBAction)overDueClicked:(id)sender;
+
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
@@ -121,9 +120,22 @@
     }
 }
 
+- (void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section {
+    UITableViewHeaderFooterView *header = (UITableViewHeaderFooterView *)view;
+    
+    header.textLabel.textColor = [UIColor redColor];
+    header.textLabel.font = [UIFont boldSystemFontOfSize:12];
+    CGRect headerFrame = header.frame;
+    header.textLabel.frame = headerFrame;
+    //header.textLabel.textAlignment = NSTextAlignmentCenter;
+}
+
 #pragma mark -- tableView delegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    
+    //[tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
     YQSingleAccountDetail *single = self.detailArray[indexPath.section][indexPath.row];
        if (self.state == PayStateTypeTobePaid) {
         if ([[NSDate date] compare:single.payDate] == NSOrderedAscending) {
@@ -202,22 +214,45 @@
     [self changeToState:PayStateTypeOverdue];
 }
 
-#pragma mark -- button clicked
-- (IBAction)toBePaidButtonClicked:(id)sender {
-    self.state = PayStateTypeTobePaid;
-    _detailArray = [self getDetailArrayByPayStateType:PayStateTypeTobePaid];
-    [self.tableView reloadData];
+#pragma mark -- UISegmented clicked
+
+- (IBAction)valueChanged:(UISegmentedControl *)sender {
+    
+     NSInteger Index = sender.selectedSegmentIndex;
+    NSLog(@"%ld",Index);
+    switch (Index) {
+            
+        case 0:
+            
+            self.state = PayStateTypeTobePaid;
+            _detailArray = [self getDetailArrayByPayStateType:PayStateTypeTobePaid];
+            [self.tableView reloadData];
+
+            
+            break;
+            
+        case 1:
+            
+            self.state = PayStateTypeHaveBeenPaid;
+            _detailArray = [self getDetailArrayByPayStateType:PayStateTypeHaveBeenPaid];
+            [self.tableView reloadData];
+            
+            break;
+            
+        case 2:
+            
+            self.state = PayStateTypeOverdue;
+            _detailArray = [self getDetailArrayByPayStateType:PayStateTypeOverdue];
+            [self.tableView reloadData];
+            
+            break;
+            
+        default:
+            
+            break;
+            
+    }
+    
 }
 
-- (IBAction)haveBeenPaidClicked:(id)sender {
-    self.state = PayStateTypeHaveBeenPaid;
-    _detailArray = [self getDetailArrayByPayStateType:PayStateTypeHaveBeenPaid];
-    [self.tableView reloadData];
-}
-
-- (IBAction)overDueClicked:(id)sender {
-    self.state = PayStateTypeOverdue;
-    _detailArray = [self getDetailArrayByPayStateType:PayStateTypeOverdue];
-    [self.tableView reloadData];
-}
 @end

@@ -84,6 +84,16 @@
     return @"设置本地推送时间";
 }
 
+- (void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section {
+    UITableViewHeaderFooterView *header = (UITableViewHeaderFooterView *)view;
+    
+    header.textLabel.textColor = [UIColor redColor];
+    header.textLabel.font = [UIFont boldSystemFontOfSize:18];
+    CGRect headerFrame = header.frame;
+    header.textLabel.frame = headerFrame;
+    //header.textLabel.textAlignment = NSTextAlignmentCenter;
+}
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell* cell = [tableView cellForRowAtIndexPath:indexPath];

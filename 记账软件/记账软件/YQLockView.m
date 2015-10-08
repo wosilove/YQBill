@@ -163,12 +163,12 @@
         [self.delegate lockView:self didFinishPath:path];
     }
     
-    // 取消选中所有的按钮
-    //    for (MJCircleView *btn in self.selectedButtons) {
-    ////        btn.selected = NO;
-    //        [btn setSelected:NO];
-    //    }
-    [self.selectedButtons makeObjectsPerformSelector:@selector(setSelected:) withObject:@(NO)];
+     //取消选中所有的按钮
+        for (YQCircleView *btn in self.selectedButtons) {
+    //        btn.selected = NO;
+            [btn setSelected:NO];
+        }
+    //[self.selectedButtons makeObjectsPerformSelector:@selector(setSelected:) withObject:@(NO)];
     
     // 清空选中的按钮
     [self.selectedButtons removeAllObjects];

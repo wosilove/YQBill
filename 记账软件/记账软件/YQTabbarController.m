@@ -9,7 +9,7 @@
 #import "YQTabbarController.h"
 #import "YQKeepAccountController.h"
 #import "YQEditingController.h"
-
+#import "YQBaseNavigationController.h"
 @interface YQTabbarController ()<UITabBarDelegate,UITabBarControllerDelegate>
 
 @end
@@ -21,12 +21,11 @@
 
     self.delegate = self;
     
-//    UIImage *image = [UIImage imageNamed:@"tabbarbackground"];
-//    
-//    [image drawInRect:self.tabBar.frame];
-  
-}
+    self.tabBar.barTintColor = [UIColor colorWithRed:29/255.0 green:55/255.0 blue:105/255.0 alpha:1];
+    self.tabBar.tintColor = [UIColor whiteColor];
 
+
+}
 
 
 -(BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController
@@ -46,8 +45,8 @@
         UIStoryboard *detailStoryBoard = [UIStoryboard storyboardWithName:@"YQEdtingController" bundle:nil];
         YQEditingController *editController = [detailStoryBoard instantiateInitialViewController];
         
-        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:editController];
-        nav.navigationBar.backgroundColor = [UIColor colorWithRed:30/255.0 green:54/255.0 blue:200/255.0 alpha:1.0];
+        YQBaseNavigationController *nav = [[YQBaseNavigationController alloc] initWithRootViewController:editController];
+       
         
         //  传数据到下一个编辑控制器
         editController.flag = ControllerFlagKeepAnAccount;

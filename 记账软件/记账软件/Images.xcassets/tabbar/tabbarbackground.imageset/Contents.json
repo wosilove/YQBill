@@ -2,17 +2,20 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "tabbarbackground.png"
+      "filename" : "tabbarbackground.png",
+      "scale" : "1x"
     },
     {
       "resizing" : {
-        "mode" : "3-part-horizontal",
+        "mode" : "9-part",
         "center" : {
-          "mode" : "stretch",
-          "width" : 1
+          "mode" : "tile",
+          "width" : 1,
+          "height" : 1
         },
-        "capInsets" : {
+        "cap-insets" : {
+          "bottom" : 57,
+          "top" : 57,
           "right" : 320,
           "left" : 319
         }

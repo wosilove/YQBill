@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface YQPassWord : NSObject
+@interface YQPassWordTool : NSObject
 
 /**
  *  取出密码

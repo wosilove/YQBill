@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "YQPassWord.h"
+#import "YQPassWordTool.h"
 #import "YQLoginController.h"
 #import "YQTabbarController.h"
 @interface AppDelegate ()
@@ -27,7 +27,7 @@
     // 2.设置根控制器
     
     self.window.rootViewController = [[YQTabbarController alloc] init];
-    NSString *password = [YQPassWord password];
+    NSString *password = [YQPassWordTool password];
     
     if (password) {
         YQLoginController *login = [[YQLoginController alloc] init];

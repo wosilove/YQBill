@@ -157,6 +157,7 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.row == 4) {
+        
         UIActionSheet *sheet = [[UIActionSheet alloc]initWithTitle:@"选择还款方式" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:@"等额本息" otherButtonTitles:@"按月计息,到期还本",@"按日计息,到期还本",@"到期还本息",nil];
         [sheet showInView:self.tableView];
     }

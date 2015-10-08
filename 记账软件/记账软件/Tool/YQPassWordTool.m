@@ -6,9 +6,9 @@
 //  Copyright (c) 2015年 nickchen. All rights reserved.
 //
 
-#import "YQPassWord.h"
+#import "YQPassWordTool.h"
 
-@implementation YQPassWord
+@implementation YQPassWordTool
 
 + (NSString*)password
 {

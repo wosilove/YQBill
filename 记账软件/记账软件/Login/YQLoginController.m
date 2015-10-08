@@ -8,7 +8,7 @@
 
 #import "YQLoginController.h"
 #import "YQLockView.h"
-#import "YQPassWord.h"
+#import "YQPassWordTool.h"
 #import "YQTabbarController.h"
 @interface YQLoginController ()<YQLockViewDelegate>
 
@@ -27,7 +27,7 @@
 -(void)lockView:(YQLockView *)lockView didFinishPath:(NSString *)path
 {
   
-    NSString *password = [YQPassWord password];
+    NSString *password = [YQPassWordTool password];
     if ([password isEqualToString:path]) {
         NSLog(@"chenggong");
         UIWindow *window = [UIApplication sharedApplication].keyWindow;

@@ -7,7 +7,7 @@
 //
 
 #import "YQDetailCell.h"
-
+#import "UILabel+showNum.h"
 @interface YQDetailCell ()
 @property (weak, nonatomic) IBOutlet UILabel *installmentLabel;
 @property (weak, nonatomic) IBOutlet UILabel *capitalLabel;
@@ -38,8 +38,14 @@
 {
     _detail =detail;
     self.installmentLabel.text =[NSString stringWithFormat:@"第%d期", detail.installment];
-    self.capitalLabel.text = [NSString stringWithFormat:@"%.2f",detail.capital];
-    self.rateLabel.text = [NSString stringWithFormat:@"%.2f",detail.interest];
+    
+    // 每期应还的本金
+    [self.capitalLabel setNumber:detail.capital];
+    
+    // 每期应还的利息
+    [self.rateLabel setNumber:detail.interest];
+    
+    // 每期还款日
     self.paymentLabel.text = detail.paymentDate;
     
     switch (detail.payState) {

@@ -7,7 +7,6 @@
 //
 
 #import "YQRecordBaseViewController.h"
-#import "YQKeepAccountController.h"
 #import "YQInvestRecordCell.h"
 #import "YQEditingController.h"
 #import "YQSeeDetailController.h"
@@ -30,17 +29,6 @@
 {
     [self.tableView reloadData];
 }
-
-//- (NSMutableArray *)accounts
-//{
-//    // 从文件中读数据
-//    // 数据库中没有数据
-//    if (_accounts == nil) {
-//        _accounts = [NSMutableArray array];
-//    }
-//    
-//    return  _accounts;
-//}
 
 
 #pragma mark - Table view data source

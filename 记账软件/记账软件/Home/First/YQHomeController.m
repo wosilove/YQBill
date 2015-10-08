@@ -11,7 +11,7 @@
 #import "YQHomeCell.h"
 #import "CompanyAccount.h"
 #import "YQSecondHomeViewController.h"
-#import "NSTimer+NKHelper.h"
+#import "UILabel+showNum.h"
 @interface YQHomeController ()<UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *interestToBeCollectedLabel;
 @property (weak, nonatomic) IBOutlet UILabel *interestCollectedLabel;
@@ -30,19 +30,21 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
-    self.interestToBeCollectedLabel.text = [NSString stringWithFormat:@"%.2f",[YQAccountTool interestTobePaid]];
     
+    [self.interestToBeCollectedLabel setNumber:[YQAccountTool interestTobePaid]];
 
+    [self.interestCollectedLabel setNumber:[YQAccountTool interestHaveBeenPaid]];
     
-    self.interestCollectedLabel.text = [NSString stringWithFormat:@"%.2f",[YQAccountTool interestHaveBeenPaid]];
     self.amountLabel.text = [NSString stringWithFormat:@"%.2f",[YQAccountTool sumInvestAmount]];
     
-    
-    
-    
+    [self.amountLabel setNumber:[YQAccountTool sumInvestAmount]];
+        
     self.averageRateLabel.text = [NSString stringWithFormat:@"%.2f%%",[YQAccountTool weightedRate] * 100];
+    
     [self accountByCompany];
+    
     [self.homeTableView reloadData];
+    
 }
 
 - (void)viewDidLoad {
@@ -50,7 +52,7 @@
     [super viewDidLoad];
     self.homeTableView.delegate = self;
     self.homeTableView.dataSource = self;
-    self.navigationController.automaticallyAdjustsScrollViewInsets = NO;
+    //self.navigationController.automaticallyAdjustsScrollViewInsets = NO;
 }
 
 -(NSMutableArray *)accountByCompany

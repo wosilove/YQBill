@@ -7,7 +7,7 @@
 //
 
 #import "YQTabbarController.h"
-#import "YQKeepAccountController.h"
+//#import "YQKeepAccountController.h"
 #import "YQEditingController.h"
 #import "YQBaseNavigationController.h"
 @interface YQTabbarController ()<UITabBarDelegate,UITabBarControllerDelegate>

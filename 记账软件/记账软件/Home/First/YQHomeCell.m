@@ -10,6 +10,7 @@
 #import "CompanyAccount.h"
 #import "YQAccount.h"
 #import "YQCompany.h"
+#import "UILabel+showNum.h"
 @interface YQHomeCell ()
 
 
@@ -53,8 +54,17 @@
 -(void)setCompanyAccount:(CompanyAccount *)companyAccount{
     _companyAccount = companyAccount;
     self.companyNameLabel.text = companyAccount.companyName;
-    self.amountLabel.text = [NSString stringWithFormat:@"%.2f",companyAccount.investAmount];
-    self.ratioLabel.text = [NSString stringWithFormat:@"%.2f",companyAccount.ratio];
+    
+    float i=roundf(companyAccount.investAmount);//对num取整
+    if (i==companyAccount.investAmount) {
+        self.amountLabel.text =[NSString stringWithFormat:@"投资金额%.0f元",i];//%.0f表示小数点后面显示0位
+    }else{
+        self.amountLabel.text =[NSString stringWithFormat:@"投资金额%.2f元",companyAccount.investAmount];//注意这里是打印num对应的值
+    }
+    
+    
+    self.ratioLabel.text = [NSString stringWithFormat:@"投资占比: %.2f%%",companyAccount.ratio * 100];
+    
    //NSString *platformName = ([UIImage imageNamed:companyAccount.companyIcon] != nil)? companyAccount.companyIcon : @"default_platform";
     
     self.companyIcon.image = [UIImage imageNamed:@"default_platform"];

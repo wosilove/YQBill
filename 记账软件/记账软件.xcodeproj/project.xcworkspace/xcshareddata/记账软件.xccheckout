@@ -6,31 +6,35 @@
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>0DDA1503-19E9-47AA-8010-40441BF73D6B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>记账软件</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>F8622BA04EBD09F8BA8DC9C0C199149407552BFA</key>
-		<string>https://github.com/MatthewYork/DateTools.git</string>
+		<key>4B294EA28546EA6B84BB86E39291A6222E709BB5</key>
+		<string>https://github.com/nickqiao/YQBill.git</string>
 	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>记账软件/记账软件.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>F8622BA04EBD09F8BA8DC9C0C199149407552BFA</key>
-		<string>DateTools/</string>
+		<key>4B294EA28546EA6B84BB86E39291A6222E709BB5</key>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/MatthewYork/DateTools.git</string>
+	<string>https://github.com/nickqiao/YQBill.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>F8622BA04EBD09F8BA8DC9C0C199149407552BFA</string>
+	<string>4B294EA28546EA6B84BB86E39291A6222E709BB5</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>F8622BA04EBD09F8BA8DC9C0C199149407552BFA</string>
+			<string>4B294EA28546EA6B84BB86E39291A6222E709BB5</string>
 			<key>IDESourceControlWCCName</key>
-			<string>DateTools</string>
+			<string>YQBill</string>
 		</dict>
 	</array>
 </dict>

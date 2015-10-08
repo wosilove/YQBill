@@ -43,14 +43,14 @@
     
     NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
     // 这个就是真正用时候设置的时间
-    NSInteger hour = indexPath.row + 8;
-    NSDate *firedate = [cal dateBySettingHour:16 minute:27 second:0 ofDate:today options:1];
-    notification.fireDate = firedate;
+    //NSInteger hour = indexPath.row + 8;
+    NSDate *firedate = [cal dateBySettingHour:8 minute:48 second:0 ofDate:today options:1];
+   // notification.fireDate = [NSDate date];
     
-    notification.repeatInterval = kCFCalendarUnitMinute;
-    static NSInteger year = 2000;
-    notification.alertBody = [NSString stringWithFormat:@"今年%ld",year++];
-    //@"余额宝有一笔还款待处理，利息加本金合计:40000元"
+//    notification.repeatInterval = kCFCalendarUnitMinute;
+//    static NSInteger year = 2000;
+//    notification.alertBody = [NSString stringWithFormat:@"今年%ld",year++];
+   notification.alertBody = @"余额宝有一笔还款待处理，利息加本金合计:40000元";
     //notification.timeZone = nil;
     
     //notification.alertAction = @"滑动来解锁";

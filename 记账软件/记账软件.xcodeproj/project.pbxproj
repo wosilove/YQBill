@@ -23,7 +23,13 @@
 		464B90601AF2619B009B559D /* YQCompany.m in Sources */ = {isa = PBXBuildFile; fileRef = 464B905F1AF2619B009B559D /* YQCompany.m */; };
 		464B90661AF2636C009B559D /* YQAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 464B90651AF2636C009B559D /* YQAccount.m */; };
 		464B906B1AF26A83009B559D /* YQKeepAccountController.m in Sources */ = {isa = PBXBuildFile; fileRef = 464B906A1AF26A83009B559D /* YQKeepAccountController.m */; };
-		4663CEBB1AF5E7FA008B074C /* YQEdtingController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4663CEBA1AF5E7FA008B074C /* YQEdtingController.storyboard */; };
+		465F033E1B6858C100FBAB88 /* DateTools.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 465F032F1B6858C100FBAB88 /* DateTools.bundle */; };
+		465F033F1B6858C100FBAB88 /* DTError.m in Sources */ = {isa = PBXBuildFile; fileRef = 465F03331B6858C100FBAB88 /* DTError.m */; };
+		465F03401B6858C100FBAB88 /* DTTimePeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = 465F03351B6858C100FBAB88 /* DTTimePeriod.m */; };
+		465F03411B6858C100FBAB88 /* DTTimePeriodChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 465F03371B6858C100FBAB88 /* DTTimePeriodChain.m */; };
+		465F03421B6858C100FBAB88 /* DTTimePeriodCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 465F03391B6858C100FBAB88 /* DTTimePeriodCollection.m */; };
+		465F03431B6858C100FBAB88 /* DTTimePeriodGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 465F033B1B6858C100FBAB88 /* DTTimePeriodGroup.m */; };
+		465F03441B6858C100FBAB88 /* NSDate+DateTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 465F033D1B6858C100FBAB88 /* NSDate+DateTools.m */; };
 		4663CEC31AF5F2D3008B074C /* YQSeeDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4663CEC21AF5F2D3008B074C /* YQSeeDetailController.m */; };
 		4663CEC61AF602F4008B074C /* YQDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4663CEC51AF602F4008B074C /* YQDate.m */; };
 		4663CEDD1AF6949E008B074C /* YQSingleAccountDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 4663CEDC1AF6949E008B074C /* YQSingleAccountDetail.m */; };
@@ -47,6 +53,8 @@
 		4663CF581AFEE98D008B074C /* YQLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4663CF571AFEE98D008B074C /* YQLoginController.m */; };
 		4663CF5A1AFEEA76008B074C /* YQLoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4663CF591AFEEA76008B074C /* YQLoginController.xib */; };
 		4663CF5D1AFEEDF4008B074C /* YQPassWord.m in Sources */ = {isa = PBXBuildFile; fileRef = 4663CF5C1AFEEDF4008B074C /* YQPassWord.m */; };
+		468BD6601BC618420022D2F8 /* YQEdtingController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 468BD65F1BC618420022D2F8 /* YQEdtingController.storyboard */; settings = {ASSET_TAGS = (); }; };
+		468BD6651BC61B700022D2F8 /* YQBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 468BD6641BC61B700022D2F8 /* YQBaseNavigationController.m */; settings = {ASSET_TAGS = (); }; };
 		46E68E0D1B2FA91B00878219 /* YQDataBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 46E68E0C1B2FA91B00878219 /* YQDataBaseManager.m */; };
 		46E68E541B3118B200878219 /* YQEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46E68E531B3118B200878219 /* YQEventViewController.m */; };
 		46E68E581B31378200878219 /* YQPaymentViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 46E68E571B31378200878219 /* YQPaymentViewCell.m */; };
@@ -71,13 +79,6 @@
 		46F86EEE1AF4A49600DA8DF4 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F86EE71AF4A49600DA8DF4 /* FMDatabaseQueue.m */; };
 		46F86EEF1AF4A49600DA8DF4 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F86EEA1AF4A49600DA8DF4 /* FMResultSet.m */; };
 		46F86EF11AF4AE2B00DA8DF4 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 46F86EF01AF4AE2B00DA8DF4 /* libsqlite3.0.dylib */; };
-		46F86F021AF4CD8400DA8DF4 /* DateTools.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 46F86EF31AF4CD8400DA8DF4 /* DateTools.bundle */; };
-		46F86F031AF4CD8400DA8DF4 /* DTError.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F86EF71AF4CD8400DA8DF4 /* DTError.m */; };
-		46F86F041AF4CD8400DA8DF4 /* DTTimePeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F86EF91AF4CD8400DA8DF4 /* DTTimePeriod.m */; };
-		46F86F051AF4CD8400DA8DF4 /* DTTimePeriodChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F86EFB1AF4CD8400DA8DF4 /* DTTimePeriodChain.m */; };
-		46F86F061AF4CD8400DA8DF4 /* DTTimePeriodCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F86EFD1AF4CD8400DA8DF4 /* DTTimePeriodCollection.m */; };
-		46F86F071AF4CD8400DA8DF4 /* DTTimePeriodGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F86EFF1AF4CD8400DA8DF4 /* DTTimePeriodGroup.m */; };
-		46F86F081AF4CD8400DA8DF4 /* NSDate+DateTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F86F011AF4CD8400DA8DF4 /* NSDate+DateTools.m */; };
 		46F86F241AF53DBB00DA8DF4 /* YQEditingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F86F221AF53DBB00DA8DF4 /* YQEditingController.m */; };
 /* End PBXBuildFile section */
 
@@ -122,7 +123,21 @@
 		464B90651AF2636C009B559D /* YQAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQAccount.m; sourceTree = "<group>"; };
 		464B90691AF26A83009B559D /* YQKeepAccountController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQKeepAccountController.h; sourceTree = "<group>"; };
 		464B906A1AF26A83009B559D /* YQKeepAccountController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQKeepAccountController.m; sourceTree = "<group>"; };
-		4663CEBA1AF5E7FA008B074C /* YQEdtingController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = YQEdtingController.storyboard; path = "/Users/nickchen/Desktop/编程/0430/记账软件/记账软件/YQEdtingController.storyboard"; sourceTree = "<absolute>"; };
+		465F032F1B6858C100FBAB88 /* DateTools.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DateTools.bundle; sourceTree = "<group>"; };
+		465F03301B6858C100FBAB88 /* DateTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateTools.h; sourceTree = "<group>"; };
+		465F03311B6858C100FBAB88 /* DTConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTConstants.h; sourceTree = "<group>"; };
+		465F03321B6858C100FBAB88 /* DTError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTError.h; sourceTree = "<group>"; };
+		465F03331B6858C100FBAB88 /* DTError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTError.m; sourceTree = "<group>"; };
+		465F03341B6858C100FBAB88 /* DTTimePeriod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTTimePeriod.h; sourceTree = "<group>"; };
+		465F03351B6858C100FBAB88 /* DTTimePeriod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTTimePeriod.m; sourceTree = "<group>"; };
+		465F03361B6858C100FBAB88 /* DTTimePeriodChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTTimePeriodChain.h; sourceTree = "<group>"; };
+		465F03371B6858C100FBAB88 /* DTTimePeriodChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTTimePeriodChain.m; sourceTree = "<group>"; };
+		465F03381B6858C100FBAB88 /* DTTimePeriodCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTTimePeriodCollection.h; sourceTree = "<group>"; };
+		465F03391B6858C100FBAB88 /* DTTimePeriodCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTTimePeriodCollection.m; sourceTree = "<group>"; };
+		465F033A1B6858C100FBAB88 /* DTTimePeriodGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTTimePeriodGroup.h; sourceTree = "<group>"; };
+		465F033B1B6858C100FBAB88 /* DTTimePeriodGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTTimePeriodGroup.m; sourceTree = "<group>"; };
+		465F033C1B6858C100FBAB88 /* NSDate+DateTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+DateTools.h"; sourceTree = "<group>"; };
+		465F033D1B6858C100FBAB88 /* NSDate+DateTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+DateTools.m"; sourceTree = "<group>"; };
 		4663CEC11AF5F2D3008B074C /* YQSeeDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQSeeDetailController.h; sourceTree = "<group>"; };
 		4663CEC21AF5F2D3008B074C /* YQSeeDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQSeeDetailController.m; sourceTree = "<group>"; };
 		4663CEC41AF602F4008B074C /* YQDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQDate.h; sourceTree = "<group>"; };
@@ -165,6 +180,9 @@
 		4663CF591AFEEA76008B074C /* YQLoginController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YQLoginController.xib; sourceTree = "<group>"; };
 		4663CF5B1AFEEDF4008B074C /* YQPassWord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQPassWord.h; sourceTree = "<group>"; };
 		4663CF5C1AFEEDF4008B074C /* YQPassWord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQPassWord.m; sourceTree = "<group>"; };
+		468BD65F1BC618420022D2F8 /* YQEdtingController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YQEdtingController.storyboard; sourceTree = "<group>"; };
+		468BD6631BC61B700022D2F8 /* YQBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQBaseNavigationController.h; sourceTree = "<group>"; };
+		468BD6641BC61B700022D2F8 /* YQBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQBaseNavigationController.m; sourceTree = "<group>"; };
 		46E68E0B1B2FA91B00878219 /* YQDataBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQDataBaseManager.h; sourceTree = "<group>"; };
 		46E68E0C1B2FA91B00878219 /* YQDataBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQDataBaseManager.m; sourceTree = "<group>"; };
 		46E68E521B3118B200878219 /* YQEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQEventViewController.h; sourceTree = "<group>"; };
@@ -214,21 +232,6 @@
 		46F86EE91AF4A49600DA8DF4 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
 		46F86EEA1AF4A49600DA8DF4 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		46F86EF01AF4AE2B00DA8DF4 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
-		46F86EF31AF4CD8400DA8DF4 /* DateTools.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DateTools.bundle; sourceTree = "<group>"; };
-		46F86EF41AF4CD8400DA8DF4 /* DateTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateTools.h; sourceTree = "<group>"; };
-		46F86EF51AF4CD8400DA8DF4 /* DTConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTConstants.h; sourceTree = "<group>"; };
-		46F86EF61AF4CD8400DA8DF4 /* DTError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTError.h; sourceTree = "<group>"; };
-		46F86EF71AF4CD8400DA8DF4 /* DTError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTError.m; sourceTree = "<group>"; };
-		46F86EF81AF4CD8400DA8DF4 /* DTTimePeriod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTTimePeriod.h; sourceTree = "<group>"; };
-		46F86EF91AF4CD8400DA8DF4 /* DTTimePeriod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTTimePeriod.m; sourceTree = "<group>"; };
-		46F86EFA1AF4CD8400DA8DF4 /* DTTimePeriodChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTTimePeriodChain.h; sourceTree = "<group>"; };
-		46F86EFB1AF4CD8400DA8DF4 /* DTTimePeriodChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTTimePeriodChain.m; sourceTree = "<group>"; };
-		46F86EFC1AF4CD8400DA8DF4 /* DTTimePeriodCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTTimePeriodCollection.h; sourceTree = "<group>"; };
-		46F86EFD1AF4CD8400DA8DF4 /* DTTimePeriodCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTTimePeriodCollection.m; sourceTree = "<group>"; };
-		46F86EFE1AF4CD8400DA8DF4 /* DTTimePeriodGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTTimePeriodGroup.h; sourceTree = "<group>"; };
-		46F86EFF1AF4CD8400DA8DF4 /* DTTimePeriodGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTTimePeriodGroup.m; sourceTree = "<group>"; };
-		46F86F001AF4CD8400DA8DF4 /* NSDate+DateTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+DateTools.h"; sourceTree = "<group>"; };
-		46F86F011AF4CD8400DA8DF4 /* NSDate+DateTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+DateTools.m"; sourceTree = "<group>"; };
 		46F86F211AF53DBB00DA8DF4 /* YQEditingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQEditingController.h; sourceTree = "<group>"; };
 		46F86F221AF53DBB00DA8DF4 /* YQEditingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQEditingController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -274,6 +277,7 @@
 		464B90231AF215C0009B559D /* 记账软件 */ = {
 			isa = PBXGroup;
 			children = (
+				468BD6611BC61B4B0022D2F8 /* Class */,
 				46E68E4F1B3117EB00878219 /* Event */,
 				46F86EDB1AF4A21D00DA8DF4 /* Tool */,
 				46F86EBF1AF4A03600DA8DF4 /* lib */,
@@ -410,6 +414,28 @@
 				46F86EAD1AF3C15E00DA8DF4 /* YQIntroCell.m */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		465F032E1B6858C100FBAB88 /* DateTools */ = {
+			isa = PBXGroup;
+			children = (
+				465F032F1B6858C100FBAB88 /* DateTools.bundle */,
+				465F03301B6858C100FBAB88 /* DateTools.h */,
+				465F03311B6858C100FBAB88 /* DTConstants.h */,
+				465F03321B6858C100FBAB88 /* DTError.h */,
+				465F03331B6858C100FBAB88 /* DTError.m */,
+				465F03341B6858C100FBAB88 /* DTTimePeriod.h */,
+				465F03351B6858C100FBAB88 /* DTTimePeriod.m */,
+				465F03361B6858C100FBAB88 /* DTTimePeriodChain.h */,
+				465F03371B6858C100FBAB88 /* DTTimePeriodChain.m */,
+				465F03381B6858C100FBAB88 /* DTTimePeriodCollection.h */,
+				465F03391B6858C100FBAB88 /* DTTimePeriodCollection.m */,
+				465F033A1B6858C100FBAB88 /* DTTimePeriodGroup.h */,
+				465F033B1B6858C100FBAB88 /* DTTimePeriodGroup.m */,
+				465F033C1B6858C100FBAB88 /* NSDate+DateTools.h */,
+				465F033D1B6858C100FBAB88 /* NSDate+DateTools.m */,
+			);
+			path = DateTools;
 			sourceTree = "<group>";
 		};
 		4663CED41AF65D69008B074C /* main */ = {
@@ -648,6 +674,23 @@
 			name = Controller;
 			sourceTree = "<group>";
 		};
+		468BD6611BC61B4B0022D2F8 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				468BD6621BC61B4B0022D2F8 /* BaseController */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		468BD6621BC61B4B0022D2F8 /* BaseController */ = {
+			isa = PBXGroup;
+			children = (
+				468BD6631BC61B700022D2F8 /* YQBaseNavigationController.h */,
+				468BD6641BC61B700022D2F8 /* YQBaseNavigationController.m */,
+			);
+			path = BaseController;
+			sourceTree = "<group>";
+		};
 		46E68E4F1B3117EB00878219 /* Event */ = {
 			isa = PBXGroup;
 			children = (
@@ -721,7 +764,7 @@
 		46F86EBF1AF4A03600DA8DF4 /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				46F86EF21AF4CD8400DA8DF4 /* DateTools */,
+				465F032E1B6858C100FBAB88 /* DateTools */,
 				46F86EDF1AF4A49600DA8DF4 /* fmdb */,
 				46F86EC01AF4A05F00DA8DF4 /* MJExtension */,
 			);
@@ -757,7 +800,7 @@
 			children = (
 				46F86F211AF53DBB00DA8DF4 /* YQEditingController.h */,
 				46F86F221AF53DBB00DA8DF4 /* YQEditingController.m */,
-				4663CEBA1AF5E7FA008B074C /* YQEdtingController.storyboard */,
+				468BD65F1BC618420022D2F8 /* YQEdtingController.storyboard */,
 			);
 			name = edit;
 			sourceTree = "<group>";
@@ -793,29 +836,6 @@
 				46F86EEA1AF4A49600DA8DF4 /* FMResultSet.m */,
 			);
 			path = fmdb;
-			sourceTree = "<group>";
-		};
-		46F86EF21AF4CD8400DA8DF4 /* DateTools */ = {
-			isa = PBXGroup;
-			children = (
-				46F86EF31AF4CD8400DA8DF4 /* DateTools.bundle */,
-				46F86EF41AF4CD8400DA8DF4 /* DateTools.h */,
-				46F86EF51AF4CD8400DA8DF4 /* DTConstants.h */,
-				46F86EF61AF4CD8400DA8DF4 /* DTError.h */,
-				46F86EF71AF4CD8400DA8DF4 /* DTError.m */,
-				46F86EF81AF4CD8400DA8DF4 /* DTTimePeriod.h */,
-				46F86EF91AF4CD8400DA8DF4 /* DTTimePeriod.m */,
-				46F86EFA1AF4CD8400DA8DF4 /* DTTimePeriodChain.h */,
-				46F86EFB1AF4CD8400DA8DF4 /* DTTimePeriodChain.m */,
-				46F86EFC1AF4CD8400DA8DF4 /* DTTimePeriodCollection.h */,
-				46F86EFD1AF4CD8400DA8DF4 /* DTTimePeriodCollection.m */,
-				46F86EFE1AF4CD8400DA8DF4 /* DTTimePeriodGroup.h */,
-				46F86EFF1AF4CD8400DA8DF4 /* DTTimePeriodGroup.m */,
-				46F86F001AF4CD8400DA8DF4 /* NSDate+DateTools.h */,
-				46F86F011AF4CD8400DA8DF4 /* NSDate+DateTools.m */,
-			);
-			name = DateTools;
-			path = "../../../../第三方/DateTools/DateTools";
 			sourceTree = "<group>";
 		};
 		46F86F0D1AF5318300DA8DF4 /* AllRecords */ = {
@@ -878,6 +898,7 @@
 				TargetAttributes = {
 					464B90201AF215C0009B559D = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = UA5WA5V26Y;
 					};
 					464B903C1AF215C0009B559D = {
 						CreatedOnToolsVersion = 6.3;
@@ -915,12 +936,12 @@
 				4663CF2D1AFE33E9008B074C /* YQMoreHeaderView.xib in Resources */,
 				464B90511AF238D2009B559D /* p2pbank.plist in Resources */,
 				4663CF5A1AFEEA76008B074C /* YQLoginController.xib in Resources */,
-				4663CEBB1AF5E7FA008B074C /* YQEdtingController.storyboard in Resources */,
 				464B90381AF215C0009B559D /* LaunchScreen.xib in Resources */,
+				468BD6601BC618420022D2F8 /* YQEdtingController.storyboard in Resources */,
 				464B90351AF215C0009B559D /* Images.xcassets in Resources */,
-				46F86F021AF4CD8400DA8DF4 /* DateTools.bundle in Resources */,
 				4663CF1F1AFD9557008B074C /* YQDetailCell.xib in Resources */,
 				4663CF061AF9A198008B074C /* YQHomeCell.xib in Resources */,
+				465F033E1B6858C100FBAB88 /* DateTools.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -941,16 +962,18 @@
 				4663CEE11AF694F2008B074C /* YQDetailCell.m in Sources */,
 				460AEAB21AF343BD00D7E6AD /* YQRateAndDateCell.m in Sources */,
 				4663CF161AFD0690008B074C /* YQRecordBaseViewController.m in Sources */,
+				465F03411B6858C100FBAB88 /* DTTimePeriodChain.m in Sources */,
 				46F86EDE1AF4A30300DA8DF4 /* YQAccountTool.m in Sources */,
 				4663CF461AFE57CE008B074C /* YQGestureSettingViewController.m in Sources */,
 				46F86ED41AF4A05F00DA8DF4 /* MJProperty.m in Sources */,
-				46F86F061AF4CD8400DA8DF4 /* DTTimePeriodCollection.m in Sources */,
 				46F86EBB1AF3F01B00DA8DF4 /* YQInvestRecordCell.m in Sources */,
 				4663CF431AFE557B008B074C /* YQLockView.m in Sources */,
+				465F03421B6858C100FBAB88 /* DTTimePeriodCollection.m in Sources */,
 				464B90601AF2619B009B559D /* YQCompany.m in Sources */,
+				465F033F1B6858C100FBAB88 /* DTError.m in Sources */,
 				4663CF261AFE3255008B074C /* YQMoreViewController.m in Sources */,
+				465F03431B6858C100FBAB88 /* DTTimePeriodGroup.m in Sources */,
 				46F86ED71AF4A05F00DA8DF4 /* NSObject+MJKeyValue.m in Sources */,
-				46F86F031AF4CD8400DA8DF4 /* DTError.m in Sources */,
 				46E68E541B3118B200878219 /* YQEventViewController.m in Sources */,
 				46F86ED31AF4A05F00DA8DF4 /* MJFoundation.m in Sources */,
 				464B904F1AF226DF009B559D /* YQTabbarController.m in Sources */,
@@ -960,6 +983,7 @@
 				464B905D1AF25DC3009B559D /* YQCompanyCell.m in Sources */,
 				4663CF111AFCFECB008B074C /* YQSecondHomeViewController.m in Sources */,
 				46F86ED91AF4A05F00DA8DF4 /* NSString+MJExtension.m in Sources */,
+				465F03441B6858C100FBAB88 /* NSDate+DateTools.m in Sources */,
 				4663CEFF1AF925CB008B074C /* YQHomeController.m in Sources */,
 				464B905A1AF25630009B559D /* YQCompanyViewController.m in Sources */,
 				460AEAAF1AF3204B00D7E6AD /* YQInvestAmountCell.m in Sources */,
@@ -969,17 +993,15 @@
 				46E68E941B32BD5600878219 /* YQNoticeTimeController.m in Sources */,
 				46F86EAE1AF3C15E00DA8DF4 /* YQIntroCell.m in Sources */,
 				46F86EEB1AF4A49600DA8DF4 /* FMDatabase.m in Sources */,
+				468BD6651BC61B700022D2F8 /* YQBaseNavigationController.m in Sources */,
 				464B902A1AF215C0009B559D /* AppDelegate.m in Sources */,
 				46F86EBE1AF3F1F800DA8DF4 /* YQInvestRecordController.m in Sources */,
-				46F86F041AF4CD8400DA8DF4 /* DTTimePeriod.m in Sources */,
-				46F86F071AF4CD8400DA8DF4 /* DTTimePeriodGroup.m in Sources */,
 				46F86ED61AF4A05F00DA8DF4 /* NSObject+MJCoding.m in Sources */,
 				46F86EA81AF379D800DA8DF4 /* YQRateBeginDayCell.m in Sources */,
 				460AEAAB1AF2894400D7E6AD /* YQInvestCompanyCell.m in Sources */,
 				46F86ED81AF4A05F00DA8DF4 /* NSObject+MJProperty.m in Sources */,
 				46F86ED51AF4A05F00DA8DF4 /* MJType.m in Sources */,
 				4663CF3C1AFE547B008B074C /* YQCircleView.m in Sources */,
-				46F86F051AF4CD8400DA8DF4 /* DTTimePeriodChain.m in Sources */,
 				4663CF051AF9A198008B074C /* YQHomeCell.m in Sources */,
 				46F86EEC1AF4A49600DA8DF4 /* FMDatabaseAdditions.m in Sources */,
 				46E68E581B31378200878219 /* YQPaymentViewCell.m in Sources */,
@@ -993,7 +1015,7 @@
 				4663CF5D1AFEEDF4008B074C /* YQPassWord.m in Sources */,
 				464B90661AF2636C009B559D /* YQAccount.m in Sources */,
 				464B90271AF215C0009B559D /* main.m in Sources */,
-				46F86F081AF4CD8400DA8DF4 /* NSDate+DateTools.m in Sources */,
+				465F03401B6858C100FBAB88 /* DTTimePeriod.m in Sources */,
 				46F86EEE1AF4A49600DA8DF4 /* FMDatabaseQueue.m in Sources */,
 				4663CF521AFE61ED008B074C /* YQLockViewController.m in Sources */,
 			);
@@ -1123,6 +1145,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "记账软件/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1133,6 +1156,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "记账软件/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
